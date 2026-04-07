@@ -585,6 +585,8 @@
 
     .detail-shell {
       padding: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     .detail-shell h4 {
@@ -597,7 +599,9 @@
       gap: 10px;
       padding: 0;
       list-style: none;
-      margin: 0 0 20px;
+      margin: 0;
+      align-content: start;
+      flex: 1;
     }
 
     .modal-list li {
@@ -610,16 +614,6 @@
     .modal-list li::before {
       content: "•";
       color: var(--accent-2);
-    }
-
-    .paste-note {
-      border-radius: 16px;
-      padding: 14px;
-      background: rgba(124,156,255,0.08);
-      border: 1px solid rgba(124,156,255,0.18);
-      color: #dce7ff;
-      line-height: 1.6;
-      font-size: 0.94rem;
     }
 
     @media (max-width: 1080px) {
@@ -705,6 +699,7 @@
         </div>
       </div>
       <div class="pill-row">
+        <div class="pill">Combat</div>
         <div class="pill">Brainrot Game</div>
         <div class="pill">Tycoon</div>
         <div class="pill">Disaster Game</div>
@@ -736,7 +731,7 @@
         <div class="about-card">
           <h3>How I work</h3>
           <p>
-            I prefer building full working systems instead of tiny disconnected snippets. That means clear structure, practical server-client separation, and features that can actually be shown in a real Studio recording. I also stay away from AI, I've had experience with it in the past and it totally sucks when it comes to scripting.
+            I prefer building full working systems instead of tiny disconnected snippets. That means clear structure, practical server-client separation, and features that can actually be shown in a real Studio recording.
           </p>
         </div>
       </div>
@@ -746,7 +741,7 @@
       <div>
         <strong style="display:block; font-size:1.2rem; margin-bottom:8px;">Zak — Roblox Scripter</strong>
         <p>
-          This portfolio is set up to show my gameplay clips and talk about who I am.
+          This portfolio is set up so each project can open a dedicated viewer with your gameplay clip. Replace the placeholder video URLs in the code once, and the site is ready to show.
         </p>
       </div>
       <div class="pill-row" style="margin-top:0;">
@@ -776,8 +771,6 @@
         <div class="detail-shell">
           <h4>Included Features</h4>
           <ul class="modal-list" id="modalFeatures"></ul>
-          <div class="paste-note">
-        
         </div>
       </div>
     </div>
@@ -789,7 +782,7 @@
         title: "Combat",
         tag: "Core Combat",
         description: "Combat-focused Roblox gameplay showcasing responsive attacks, hit flow, combat feedback, and practical fight system structure.",
-        videoUrl: "https://drive.google.com/file/d/1JSwvDKGzzeL3don_7ahoeFiCd3NZj2rb/view?usp=sharing",
+        videoUrl: "PASTE_COMBAT_VIDEO_URL_HERE",
         features: [
           "Combat system showcase",
           "Attack and hit flow",
@@ -802,7 +795,7 @@
         title: "Brainrot Game",
         tag: "Gameplay System",
         description: "Wave-based gameplay demo with pickups, plot logic, melee combat, enemy ragdolling, and progression.",
-        videoUrl: "https://drive.google.com/file/d/1qab34unEv6jWCiKS7cwkUbtAiLvXjkGp/view?usp=sharing",
+        videoUrl: "PASTE_BRAINROT_VIDEO_URL_HERE",
         features: [
           "Wave spawning and survival flow",
           "Pickup and drop interactions",
@@ -815,7 +808,7 @@
         title: "Tycoon",
         tag: "Economy System",
         description: "Blank-baseplate tycoon demo with plot ownership, droppers, conveyors, upgrades, and passive income.",
-        videoUrl: "https://drive.google.com/file/d/1rzRu1nPqpBMfMp9FubcbRftjPN0sIvw0/view?usp=sharing",
+        videoUrl: "PASTE_TYCOON_VIDEO_URL_HERE",
         features: [
           "Plot system and ownership",
           "Droppers and conveyors",
@@ -828,7 +821,7 @@
         title: "Disaster Game",
         tag: "Round System",
         description: "Round-based survival gameplay with rotating disasters, eliminations, and spectator flow.",
-        videoUrl: "https://drive.google.com/file/d/1JqHDFglq0Bmdppuaa47BdwAA-baw1uc9/view?usp=sharing",
+        videoUrl: "PASTE_DISASTER_VIDEO_URL_HERE",
         features: [
           "Round system",
           "Flood and meteor disasters",
@@ -841,7 +834,7 @@
         title: "Roleplay",
         tag: "Interaction System",
         description: "EMS-style roleplay demo with stretcher flow, ambulance interaction, and proximity-driven rescue gameplay.",
-        videoUrl: "https://drive.google.com/file/d/197fFmo-byynu9-2a4eSOUJv4pW30nYbS/view?usp=sharing",
+        videoUrl: "PASTE_ROLEPLAY_VIDEO_URL_HERE",
         features: [
           "Stretcher interaction system",
           "Ambulance boarding and transport",
@@ -854,7 +847,7 @@
         title: "Adventure",
         tag: "Quest / AI",
         description: "Adventure demo with dungeon entry, NPC quest flow, enemy AI, and boss fight progression.",
-        videoUrl: "https://drive.google.com/file/d/1feFjiUi986z0jUcK7w6UC85RJxlJlTB7/view?usp=sharing",
+        videoUrl: "PASTE_ADVENTURE_VIDEO_URL_HERE",
         features: [
           "NPC quest interaction",
           "Dungeon traversal",
@@ -867,7 +860,7 @@
         title: "FPS",
         tag: "Combat",
         description: "Tactical FPS demo with responsive weapon handling and server-side hit validation.",
-        videoUrl: "https://drive.google.com/file/d/1d5wKSwrtaa0yOO5M3XEgqTF_1N0_DRKt/view?usp=sharing",
+        videoUrl: "PASTE_FPS_VIDEO_URL_HERE",
         features: [
           "Raycast shooting",
           "Recoil feedback",
@@ -880,7 +873,7 @@
         title: "Basketball",
         tag: "Sports Gameplay",
         description: "Basketball demo with ball handling, shot timing, dunks, dribble moves, and hoop scoring.",
-        videoUrl: "https://drive.google.com/file/d/1PhVdj2Ol7_VcHXKNfX_ZsjhngV-e9xn0/view?usp=sharing",
+        videoUrl: "PASTE_BASKETBALL_VIDEO_URL_HERE",
         features: [
           "Shot meter",
           "Dunk system",
@@ -893,7 +886,7 @@
         title: "UI Systems",
         tag: "Interface",
         description: "Collection of interface systems including shop, inventory, HUD, and leaderboard flow.",
-        videoUrl: "https://drive.google.com/file/d/1L-ViU82VVS6if_IepGnBj-5efrRTcYlU/view?usp=sharing",
+        videoUrl: "PASTE_UI_SYSTEMS_VIDEO_URL_HERE",
         features: [
           "Shop UI",
           "Inventory UI",
@@ -906,7 +899,7 @@
         title: "Simulator",
         tag: "Progression Loop",
         description: "Playable simulator demo with click gain, sell zone, upgrades, rebirth flow, and progression HUD.",
-        videoUrl: "https://drive.google.com/file/d/1oPIlgiHT9kgDyX2PJBFroqua9oVdpXV9/view?usp=sharing",
+        videoUrl: "PASTE_SIMULATOR_VIDEO_URL_HERE",
         features: [
           "Click gain loop",
           "Sell zone",
@@ -919,7 +912,7 @@
         title: "Lighting / Spotlights",
         tag: "Stage Control",
         description: "Interactive spotlight board controlling grouped stage lights with live changes in color, wave, and intensity.",
-        videoUrl: "https://drive.google.com/file/d/1Z7nhWEScG-nQDg-sumbmLRBL-9COKac3/view?usp=sharing",
+        videoUrl: "PASTE_LIGHTING_VIDEO_URL_HERE",
         features: [
           "Grouped spotlight control",
           "Color presets",
@@ -941,9 +934,10 @@
     function getEmbedMarkup(url) {
       if (!url || url.includes("PASTE_")) {
         return `
-          <div class="">
+          <div class="video-placeholder">
             <div>
-              
+              <strong style="display:block; color:#eef2ff; margin-bottom:10px; font-size:1rem;">Video not pasted yet</strong>
+              Paste your video URL into this project's <code>videoUrl</code> field in the HTML file.
             </div>
           </div>
         `;
