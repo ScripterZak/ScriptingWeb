@@ -941,10 +941,9 @@
     function getEmbedMarkup(url) {
       if (!url || url.includes("PASTE_")) {
         return `
-          <div class="video-placeholder">
+          <div class="">
             <div>
-              <strong style="display:block; color:#eef2ff; margin-bottom:10px; font-size:1rem;">Video not pasted yet</strong>
-              Paste your video URL into this project's <code>videoUrl</code> field in the HTML file.
+              
             </div>
           </div>
         `;
